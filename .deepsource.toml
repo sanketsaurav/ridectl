@@ -1,0 +1,15 @@
+version = 1
+
+test_patterns = []
+
+exclude_patterns = [
+  'pkg/apis/secrets/**',  # auto-generated files
+]
+
+[[ analyzers ]]
+  name = 'go'
+  enabled = true
+  
+  [analyzers.meta]
+    import_path = "github.com/sanketsaurav/ridectl"
+
